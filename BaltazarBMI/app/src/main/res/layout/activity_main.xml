@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/purple_700"
+            android:fadingEdge="horizontal"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="-16dp"
+            tools:layout_editor_absoluteY="16dp">
+                <TextView
+                    android:id="@+id/tv1"
+                    android:layout_width="126dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="40dp"
+                    android:shadowColor="@color/white"
+                    android:shadowDx="4"
+                    android:shadowDy="4"
+                    android:text="BMI"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@android:color/white"
+                    android:textSize="50sp"
+                    android:typeface="serif" />
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="43dp"
+                    android:layout_gravity="center"
+                    android:text="Calculator"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="278dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="90dp"
+                    android:text="WEIGHT (KG)"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold|italic"
+                    android:typeface="serif" />
+
+                <EditText
+                    android:id="@+id/et2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ems="10"
+                    android:fadingEdgeLength="10dp"
+                    android:hint="IN CMs"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:id="@+id/tv3"
+                    android:layout_width="279dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingTop="30dp"
+                    android:text="HEIGHT (CM)"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold|italic"
+                    android:typeface="serif" />
+
+                <EditText
+                    android:id="@+id/et1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ems="10"
+                    android:fadingEdgeLength="10dp"
+                    android:hint="IN KGs"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center">
+
+                        <requestFocus />
+
+                </EditText>
+
+
+
+
+                <Button
+                    android:id="@+id/ib1"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:fadingEdge="vertical"
+                    android:longClickable="true"
+                    android:nextFocusRight="@color/white"
+                    android:text="Calculate"
+                    android:visibility="visible" />
+        </LinearLayout>
+
+        <TextView
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textSize="20dp"
+                    android:textColor="@color/white"
+                    android:text=""
+                    android:paddingTop="20dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/tv4"
+                    android:textStyle="bold" />
+</androidx.constraintlayout.widget.ConstraintLayout>
